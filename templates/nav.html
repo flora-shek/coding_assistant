@@ -1,0 +1,24 @@
+
+<nav class="navbar bg-body-tertiary shadow-sm fixed-top bg-white">
+    <div class="container-fluid">
+      <a class="navbar-brand col" href="/"><h5 class="text-secondary ">Code-tutor</h5>
+      </a>
+      {% if  not login %}
+      <a class=" btn btn-primary"  href="/login">Login/Register
+      </a>
+      {% else %}
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="true">
+            Profile
+          </button>
+          <ul class="dropdown-menu" style = "max-height: 200px; overflow-y: auto;">
+                <li><a class="dropdown-item" href="/">History</a></li>
+                <li><a class="dropdown-item" href="/">Logout</a></li>
+            
+            
+          </ul>
+        </div>
+      {% endif %}
+    </div>
+  </nav>
+  <div style ="height:50px;"></div>
